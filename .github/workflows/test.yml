@@ -14,6 +14,11 @@ jobs:
 
     runs-on: ubuntu-latest
     environment: Cargodrom
+    env:
+      API_URL: 'https://cargodrom.com/api/1.0'
+      API_USER: '${{ secrets.API_USER }}'
+      API_PASSWORD: '${{ secrets.API_PASSWORD }}'
+      NODE_TLS_REJECT_UNAUTHORIZED: '0'
 
     steps:
     - uses: actions/checkout@v3

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "test": "ts-mocha -r config.js src/*.spec.ts",
+    "test:github": "ts-mocha src/*.spec.ts",
     "test:user": "ts-mocha -r config.js src/user.spec.ts"
   },
   "keywords": [],

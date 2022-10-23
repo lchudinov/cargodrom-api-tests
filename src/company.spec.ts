@@ -21,6 +21,9 @@ describe('Company API', function () {
   this.timeout(0);
   let token: string;
 
+  console.log(`login`, login);
+  console.log(`password`, password);
+
   before('login', async function () {
     req = request(url);
     const res = await req.post('/user_login').send({ login, password });

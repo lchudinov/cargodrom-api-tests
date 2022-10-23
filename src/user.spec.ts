@@ -20,6 +20,8 @@ describe('User API', function () {
   this.timeout(0);
   this.bail(true);
   let token: string;
+  
+  console.log(`Testing against ${url} with user ${login} ${password?.replace(/./g, '*')}`);
 
   before('login', async function () {
     req = request(url);

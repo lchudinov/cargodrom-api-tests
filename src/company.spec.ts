@@ -43,7 +43,7 @@ describe('Company API', function () {
         .set('Authorization', `Bearer ${token}`)
         .send();
       expect(res.status, JSON.stringify(res.body)).to.equal(200);
-      departments = res.body;
+      departments = res.body.items;
     });
 
     it('should get an array', () => {
